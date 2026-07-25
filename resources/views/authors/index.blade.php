@@ -7,6 +7,9 @@
         <span class="text-muted fs-6">Jemi: {{ $authors->total() }} awtor</span>
     </div>
 
+
+
+    
     <div class="row g-4">
         <div class="col-lg-3">
             <div class="border-0 shadow-sm rounded-4 p-3" >
