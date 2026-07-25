@@ -2,14 +2,13 @@
 
 @section('content')
 <div class="container py-4">
+    
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="fw-bold text-success display-6 mb-0">Ähli awtorlar</h1>
         <span class="text-muted fs-6">Jemi: {{ $authors->total() }} awtor</span>
     </div>
 
 
-
-    
     <div class="row g-4">
         <div class="col-lg-3">
             <div class="border-0 shadow-sm rounded-4 p-3" >
