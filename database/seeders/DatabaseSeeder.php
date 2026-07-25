@@ -5,10 +5,10 @@ namespace Database\Seeders;
 use App\Models\Author;
 use App\Models\Book;
 use App\Models\Category;
-use App\Models\Language;
+// use App\Models\Language;
 use App\Models\Publisher;
 use App\Models\User;
-use App\Models\Year;
+// use App\Models\Year;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
             BookSeeder::class,
         ]);
             
-        Year::factory(400)->create();
+        // Year::factory(400)->create();
         Author::factory(100)->create();
         Category::factory(5)->create();
         Publisher::factory(30)->create();

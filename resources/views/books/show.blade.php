@@ -4,7 +4,7 @@
 <div class="container py-4 py-lg-5">
     
     <div class="mb-3">
-        <a href="{{ route('books.index') }}" class="btn btn-sm btn-outline-success rounded-pill px-3">
+        <a href="{{ $backUrl }}" class="btn btn-sm btn-outline-success rounded-pill px-3">
             <i class="bi bi-arrow-left me-1"></i> Yza
         </a>
     </div>

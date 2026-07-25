@@ -35,7 +35,7 @@ class BookFactory extends Factory
             'language_id' => $language->id,
             'publisher_id' => $publisher->id,
             'name' => fake()->sentence(3),
-            'page_number' => fake()->numberBetween(100, 1000),
+            'page_number' => fake()->numberBetween(10, 1000),
             'code' => fake()->unique()->bothify('ISBN-###-????'),
             'like_count' => fake()->numberBetween(0, 5000),
         ];

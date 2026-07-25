@@ -23,7 +23,8 @@ class AuthorController extends Controller
     public function show($id)
     {
         $author = Author::with('books')->findOrFail($id);
+        $backUrl = url()->previous();
 
-        return view('authors.show', compact('author'));
+        return view('authors.show', compact('author', 'backUrl'));
     }
 }

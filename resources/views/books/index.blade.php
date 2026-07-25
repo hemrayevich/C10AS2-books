@@ -50,14 +50,18 @@
                     <div class="row g-2">
                         <div class="col-6">
                             <input type="number" 
-                                name="year_from" 
+                                name="year_from"
+                                min="1800" 
+                                max="2026" 
                                 class="form-control" 
                                 placeholder="Basy" 
                                 value="{{ request('year_from') }}">
                         </div>
                         <div class="col-6">
                             <input type="number" 
-                                name="year_to" 
+                                name="year_to"
+                                min="1800" 
+                                max="2026"
                                 class="form-control" 
                                 placeholder="Sonki" 
                                 value="{{ request('year_to') }}">
@@ -69,13 +73,17 @@
                         <div class="col-6">
                             <input type="number" 
                                 name="page_from" 
+                                min="1" 
+                                max="1000"
                                 class="form-control" 
                                 placeholder="Basy" 
                                 value="{{ request('page_from') }}">
                         </div>
                         <div class="col-6">
                             <input type="number" 
-                                name="page_to" 
+                                name="page_to"
+                                min="1" 
+                                max="1000" 
                                 class="form-control" 
                                 placeholder="Sony" 
                                 value="{{ request('page_to') }}">

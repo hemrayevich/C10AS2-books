@@ -84,6 +84,8 @@ class BookController extends Controller
     {
         $book = Book::findOrFail($id);
 
-        return view('books.show', compact('book'));
+        $backUrl = url()->previous();
+
+        return view('books.show', compact('book', 'backUrl'));
     }
 }
