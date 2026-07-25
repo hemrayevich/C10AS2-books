@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container py-4">
-    
+
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="fw-bold text-success display-6 mb-0">Ähli awtorlar</h1>
         <span class="text-muted fs-6">Jemi: {{ $authors->total() }} awtor</span>
@@ -38,6 +38,7 @@
             </div>
         </div>
 
+        
         <div class="col-lg-9">
             @if($authors->isNotEmpty())
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
