@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('page_number');
             $table->string('code');
+            $table->unsignedInteger('like_count')->default(0);
             $table->timestamps();
         });
     }

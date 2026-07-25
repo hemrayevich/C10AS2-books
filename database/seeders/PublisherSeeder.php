@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Publisher;
 use Illuminate\Database\Seeder;
 
 class PublisherSeeder extends Seeder
@@ -12,6 +13,15 @@ class PublisherSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $publishers = [
+            ['name' => 'Ylym'],
+            ['name' => 'Ylym Çyrasy'],
+            ['name' => 'Türkmen döwlet neşirýat gullugy'],
+            ['name' => 'Magryf'],
+        ];
+
+        foreach ($publishers as $publisher) {
+            Publisher::create($publisher);
+        }
     }
 }

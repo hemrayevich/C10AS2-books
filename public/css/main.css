@@ -1,0 +1,54 @@
+.pagination {
+    gap: 6px;
+}
+
+.pagination .page-item .page-link {
+    color: #198754;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px !important;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #198754;
+    color: #ffffff;
+    border-color: #198754;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #a0a0a0;
+    background-color: #f8f9fa;
+    border-color: #eee;
+}
+
+
+
+
+@keyframes hover-1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 106px;
+        height: 2px;
+    }
+    75% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+
+}

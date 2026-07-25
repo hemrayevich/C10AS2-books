@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Year;
 use Illuminate\Database\Seeder;
 
 class YearSeeder extends Seeder
@@ -12,6 +12,10 @@ class YearSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        for ($year = 1800; $year <= 2026; $year++) {
+            Year::create([
+                'year' => $year,
+            ]);
+        }
     }
 }

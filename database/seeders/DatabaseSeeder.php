@@ -2,7 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Category;
+use App\Models\Language;
+use App\Models\Publisher;
 use App\Models\User;
+use App\Models\Year;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,7 +27,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-
+        
+        
         $this->call([
             CategorySeeder::class,
             AuthorSeeder::class,
@@ -30,5 +37,13 @@ class DatabaseSeeder extends Seeder
             PublisherSeeder::class,
             BookSeeder::class,
         ]);
+            
+        Year::factory(400)->create();
+        Author::factory(100)->create();
+        Category::factory(5)->create();
+        Publisher::factory(30)->create();
+
+        Book::factory(500)->create();
     }
 }
+            
