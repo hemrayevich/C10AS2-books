@@ -18,6 +18,7 @@
                 </h5>
 
                 <form action="{{ route('authors.index') }}" method="GET">
+                    @csrf
                     <div class="mb-3">
                         <label for="search" class="form-label small fw-semibold text-muted">Awtor gözleg</label>
                         <div class="input-group">

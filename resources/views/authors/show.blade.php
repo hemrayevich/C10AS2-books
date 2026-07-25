@@ -28,7 +28,6 @@
                     </span>
                 </div>
 
-                <!-- Статистика автора -->
                 <div class="d-flex align-items-center text-success fw-semibold mb-3 gap-3">
                     <div class="d-flex align-items-center gap-1">
                         <i class="bi bi-book"></i>
@@ -36,7 +35,6 @@
                     </div>
                 </div>
 
-                <!-- Биография автора -->
                 <div class="text-muted">
                     <h5 class="fw-bold text-dark mb-2">Ömürýoly we döredijiligi</h5>
                     <p class="lh-base mb-0" style="white-space: pre-line;">

@@ -14,7 +14,7 @@
             </h5>
 
             <form action="{{ route('books.index') }}" method="GET">
-                    
+                @csrf
                 <div class="mb-3">
                     <label class="form-label text-muted small fw-semibold">Kategoriya Sayla</label>
                     <select name="category" class="form-select">
