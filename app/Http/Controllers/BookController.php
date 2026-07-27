@@ -55,7 +55,7 @@ class BookController extends Controller
         //yyly filter
         if ($request->filled('year_from')) {
             $query->whereHas('year', function ($q) use ($request) {
-                $q->where('year', '>=', $request->year_from); 
+                $q->where('year', '>=', $request->year_from);
             });
         }
         if ($request->filled('year_to')) {

@@ -103,7 +103,7 @@
                 </button>
 
                 @if(request()->hasAny(['category', 'author', 'publisher', 'year_from', 'year_to', 'page_from', 'page_to']))
-                    <a href="{{ route('authors.index') }}" class="btn btn-secondary text-white fw-semibold w-100 rounded-3 mt-2 py-2 btn-sm">
+                    <a href="{{ route('books.index') }}" class="btn btn-secondary text-white fw-semibold w-100 rounded-3 mt-2 py-2 btn-sm">
                         Filtrleri arassala
                     </a>
                 @endif
