@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class AuthorController extends Controller
 {
     public function index(Request $request) {
+
+        $request->validate([
+            'search'    => ['nullable', 'string', 'max:255'],
+        ]);
+        
         $query = Author::withCount('books');
 
         if ($request->filled('search')) {
