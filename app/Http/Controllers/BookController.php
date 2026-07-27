@@ -12,8 +12,21 @@ use Illuminate\Http\Request;
 class BookController extends Controller
 {
     public function index(Request $request) {
+        
+        $request->validate([
+            'search'    => ['nullable', 'string', 'max:255'],
+            'category'  => ['nullable', 'integer', 'min:1'],
+            'author'    => ['nullable', 'integer', 'min:1'],
+            'publisher' => ['nullable', 'integer', 'min:1'],
+            'year_from' => ['nullable', 'integer', 'min:1800', 'max:2026'],
+            'year_to'   => ['nullable', 'integer', 'min:1800', 'max:2026'],
+            'page_from' => ['nullable', 'integer', 'min:1'],
+            'page_to'   => ['nullable', 'integer', 'min:1'],
+            'sortBy' => ['nullable', 'string'],
+        ]);
 
         $sortByType = $request->sortBy ? $request->sortBy : 'name';
+
 
         $query = Book::query();
 
